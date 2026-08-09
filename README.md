@@ -21,6 +21,10 @@ The system enables clinicians and researchers to ask natural language questions 
 
 ---
 
+> ### 📍 Project Status: Design Complete — Implementation In Progress
+>
+> This repository currently holds the architecture, technical design, and implementation plan for the pipeline. Code is being built out incrementally against the roadmap below. The figures in **Evaluation Metrics** are design *targets*, not measured results — benchmark numbers will be published as each stage lands.
+
 ## 🏗️ Architecture
 
 ```
@@ -175,6 +179,18 @@ streamlit run src/serving/app.py
 This project is part of doctoral research at the **University of Maryland** investigating AI-driven predictive decision systems for life sciences. It extends the work from [healthcare-knowledge-graph-ml](https://github.com/BrianKeith2027/healthcare-knowledge-graph-ml) by adding a RAG layer on top of the knowledge graph for free-form natural language querying.
 
 ---
+
+## 🗺️ Roadmap
+
+- [x] Architecture design and tech stack selection
+- [x] Evaluation criteria and success metrics defined
+- [ ] PubMed ingestion client (`src/ingestion/pubmed_fetcher.py`)
+- [ ] Sentence-aware chunking and embedding layer
+- [ ] ChromaDB vector store integration
+- [ ] LangChain RAG chain with source citation
+- [ ] FastAPI serving layer
+- [ ] Streamlit chat interface
+- [ ] Retrieval evaluation notebook and published benchmark results
 
 ## 📜 License
 
